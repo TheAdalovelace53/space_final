@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/missions_apollo.css">
+        <title>Les missions Apollo</title>
+        </head>
+        <link rel="shortcut icon" href="images/favicon.png">
+    <body>
+        <header>
+        <nav id="barre-navigation"> <!-- Création d'un menu -->
+            <img src="images/image_titre.png" class="titre">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" id="accueil">Accueil</a></li>
+                    <li class="contient-sous-menu">
+                        <a href="#" id="rubriques">Rubriques</a>
+                        <ul class="sous-menu">
+                            <li><a href="histoire_de_l_univers.html">L'histoire de l'univers</a></li>
+                            <li><a href="astres.html">Les astres</a></li>
+                            <li><a href="futur_de_l_univers.html">Le futur de L'Univers</a></li>
+                            <li><a href="quiz.html">Quiz-bilan</a></li>
+                        </ul>
+                    </li>
+                    <li><a onClick="aPropos()">À propos</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <h1>Le programme Apollo</h1>
+        <h2>1) Présentation</h2>
+            <p>Les missions <em>Apollo</em> correspondent au programme spatial de la NASA (National Aeronautics and 
+                Space Administration). Ces missions ont été réalisées de 1961 à 1972 et ont été initialisées par
+                le président John F. Kennedy suite à son discours du 25 mai 1961. Elles ont eu lieu dans le 
+                contexte de la <strong>guerre froide</strong> et avaient pour but d'affirmer la puissance 
+                américaine face à celle de la Russie. Ces missions ont été baptisées <em>Apollo</em> en référence
+                au dieu grec Apollon.
+            </p>
+            <figure> <!-- Image qui change au survol -->
+                <img src="images/nasa.jpeg" alt="nasa" id="nasa" onMouseOut="changeImage1('images/nasa.jpeg') ;
+                changeTexte1()"  onMouseOver="changeImage1('images/programme_apollo.png') ; changeTexte2()">
+                <figcaption id="legende">La NASA</figcaption>
+            </figure>
+        <h2>2) Les principales missions</h2> <!-- Présentation des missions -->
+        <h3>Apollo 1 :</h3>
+            <p>La mission Apollo 1 a été mise en oeuvre en 1967. Malheureusement, cette mission s'est soldée
+                par la mort des trois astronautes dans un incendie lors d'une simulation au sol.
+            </p>
+            <img src="images/apollo_1.jpg" alt="apollo_1" class="apollo">
+        <h3>Apollo 7 :</h3>
+            <p>La mission Apollo 7 s'est déroulée en 1968. La NASA a effectué un premier vol habité en orbite
+                de la Terre pour tester le module de commande.
+            </p>
+            <img src="images/apollo_7.jpg" alt="apollo_7" class="apollo">
+        <h3>Apollo 8 :</h3>
+            <p>La mission <strong>Apollo 8</strong>, qui a été effectuée la même année, a permis de faire le
+                premier vol habité autour de la Lune. Elle est célèbre pour le cliché <em>Earthrise</em>, lever de terre.
+            </p>
+            <img src="images/apollo_8.jpg" alt="apollo_8" class="apollo">
+            <img src="images/earthrise.jpg" alt="earthrise" class="apollo">
+        <h3>Apollo 11 :</h3>
+            <p>La mission <strong>Apollo 11</strong> reste la mission la plus connue. Elle a eu lieu en 1969 et a 
+                réunissait l'équipage suivant composé de Neil Amstrong (à gauche), Buzz Aldrin (à droite) et Michael
+                Collins (au milieu) :
+            </p>
+            <img src="images/apollo_11.jpg" alt="apollo_11" class="apollo">
+            <p>Le 16 juillet 1969, la fusée Saturn V (voir image ci-dessous) décolle depuis la Floride.</p>
+            <img src="images/saturn_5.jpg" alt="saturn_5" id="saturn_5">
+            <p>Après 3 jours de voyage, les astronautes entrent en orbite lunaire. La fusée se sépare alors
+                en deux modules : le module <strong>Colombia</strong>, qui reste en orbite lunaire avec à son
+                bord l'astronaute Michael Collins et le module <strong>Eagle</strong>, qui va alunir avec à son
+                bord les astronautes Neil Amstrong et Buzz Aldrin. Le 20 juillet, le module Eagle alunit et le 21
+                juillet, Amstrong pose le premier pas sur la Lune et s'exclame alors :
+            </p>
+            <q>C'est un petit pas pour l'homme, un bond de géant pour l'humanité.</q>
+            <img src="images/amstrong.jpg" alt="amstrong" class="apollo">
+            <p>20 minutes plus tard, c'est au tour d'Aldrin de marcher sur la surface de la lune. Ils ont
+                réalisé plusieurs expériences scientifiques : placement d'un sismomètre et d'un réflecteur laser
+                (pour mesurer avec plus de précision la distance Terre-Lune), collecte de 21,5 kg d'échantillons
+                lunaires. Ils ont également placé une plaque commémorative et planté le drapeau américain.
+            </p>
+            <p>La mission Apollo 11 a marqué l'histoire et restera à jamais une avancée technologique considérable
+                qui a permis aux hommes de marcher sur notre satellite naturel.
+            </p>
+        <h3>Apollo 12 :</h3>
+            <p>La mission Apollo 12, qui s'est déroulée la même année, a permis d'effectuer un 
+                deuxième allunissage, avec plus de précision que celui d'Apollo 11.
+            </p>
+            <img src="images/apollo_12.jpg" alt="apollo_12" class="apollo">
+        <h3>Apollo 13 :</h3>
+            <p>Après les deux glorieuses missions, Apollo 13, qui s'est déroulée en 1970,
+                se solde par un échec. En effet, un court-circuit dans un réservoir 
+                d'oxygène déclencha une explosion dans le module de service. Cette mission
+                est célèbre à cause de la sentence prononcée par un des membres de l'équipage :
+            </p>
+            <img src="images/apollo_13.jpeg" alt="apoll_13" class="apollo">
+            <q>Houston, we've had a problem.</q>
+            <p>Malgré le danger, les astronautes ont réussi à rentrer sain et saufs sur Terre.</p>
+        <h3>Apollo 14 :</h3>
+            <p>La mission Apollo 14 (1971) a permis à la NASA de réussir un troisième alunissage. Après l'échec
+                d'Apollo 13, la sécurité a été renforcée. De plus, la dimension scientifique a été encore
+                plus mise en valeur avec la collecte de 42,8 kg de roches lunaires.
+            </p>
+            <img src="images/apollo_14.jpg" alt="apollo_14" class="apollo">
+        <h3>Apollo 15 :</h3>
+            <p>Une fois de plus, les astronautes de la mission Apollo 15 (1971) ont pu marcher sur la Lune, mais pas
+                que ! En effet, ceux-ci ont utilisé pour la première fois un <strong>rover lunaire</strong> et ont 
+                parcouru 27,9 km. Ils ont également ramené sur Terre 77 kg d'échantillons lunaires, qui ont permis
+                aux scientifiques de découvrir la <strong>roche de la genèse</strong>, vieille de 4,1 milliards 
+                d'années. Un des astronautes marque l'histoire en effectuant la première sortie extravéhiculaire en 
+                orbite lunaire.   
+            </p>
+            <img src="images/apollo_15.webp" alt="apollo_15" class="apollo">
+        <h3>Apollo 16 :</h3>
+            <p>Un autre succès pour la NASA ! En effet, Apollo 16 (1972) avait pour objectif d'étudier l'origine
+                supposée volcanique d'un plateau lunaire (région de <strong>Descartes</strong>). Les astronautes
+                ont prouvé qu'elle n'était pas volcanique, mais due à des impacts de météorite. Ceux-ci ont 
+                effectué un trajet de 27 km avec le rover lunaire et ont collecté 95, 8 kg d'échantillons lunaires.
+            </p>
+            <img src="images/apollo_16.jpg" alt="apollo_16" class="apollo">
+        <h3>Apollo 17 :</h3>
+            <p>La dernière mission <em>Apollo</em> est aussi la dernière mission sur la Lune jusqu'à aujourd'hui.
+                Apollo 17 (1972) a permis de collecter 110,5 kg de roches lunaires et de verre volcanique. Les 
+                astronautes, accompagnés d'un scientifique (géologue) pour la première fois ont parcouru 35,9 km
+                avec le rover. Les analyses scientifiques ont permis de confirmer l'existence d'un <strong>volcanisme
+                ancien sur la Lune.</strong>
+            </p>
+            <img src="images/apollo_17.webp" alt="apollo_17" class="apollo">
+        <h2>3) Le programme Artémis</h2>
+            <p>Les missions <em>Artémis</em> correspondent au nouveau programme spatial de la NASA
+                Ces missions ont pour objectif de ramener des humains sur la Lune (dont la première femme et la première 
+                personne de couleur). A long terme, elles serviraient à installer une présence humaine sur la surface
+                lunaire et en oribte afin d'anticiper les futures missions vers Mars. La première mission Artémis 1 s'est
+                déroulée en 2022 et a permis de tester le vaisseau Orion et la fusée SLS. La prochaine mission est prévue 
+                pour Septembre 2025. Ces missions ont été baptisées <em>Artémis</em> en référence
+                à la déesse grecque Artémis, soeur jumelle d'Apollon. 
+            </p>
+            <figure>
+                <img src="images/programme_artemis.png" alt="programme_artemis" id="programme_artemis">
+                <figcaption id="legende2">Le programme Artémis</figcaption>
+            </figure>
+        <script src="script/missions_apollo.js"></script>
+    </body>
+</html

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+} /*initialise les valeurs*/
+p,q{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 5px;
+}
+a{
+    margin-left: 15px;
+    cursor: pointer;
+}
+body{
+    font-family: "Orbitron"; /*police*/
+    height: 500vh;
+}
+#background-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#barre-navigation{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background: #fafafa;
+    box-shadow: inset 0px -1px 0px #d3d3d3; /*création d'une boîte*/
+}
+.titre{
+    width: 200px;
+    height: 170px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    top: 0;
+    left:0;
+}
+.menu > ul{
+    display: flex;
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: #111;
+    display: block;
+    padding: 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+} 
+.contient-sous-menu{
+    position: relative;
+}
+.sous-menu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #FFF;
+    width: max-content;
+    transition: all 0.3s ease; /*ajout d'une transition*/
+}
+.sous-menu li a:hover{
+    background: #f2f2f2;
+}
+.contient-sous-menu:hover .sous-menu{
+    display: block;
+    transition: 3s;
+}
+#recherche{
+    border: 0.5px solid black;
+}
+h1{
+    text-align: center;
+    margin-top: 130px;
+    font-family: 'Orbitron', sans-serif;
+}
+h2{
+    margin-left: 15px;
+    margin-top: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+body {
+    font-family: 'Exo', sans-serif;
+}
+#nasa{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+#legende{
+    text-align: center;
+}
+h3{
+    margin-left: 15px; /*pour décaler du bord*/
+    margin-top: 15px;
+}
+.apollo{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 512px;
+    height: auto;
+}
+#saturn_5{
+    display: block;
+    margin: auto;
+    width: 280px;
+    height: 365px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#programme_artemis{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+#legende2{
+    text-align: center;
+}

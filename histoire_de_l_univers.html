@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/histoire_univers.css">
+        <title>L'histoire de l'univers</title>
+        </head>
+        <link rel="shortcut icon" href="images/favicon.png">
+    <body>
+        <header>
+        <nav id="barre-navigation"> <!-- Création d'un menu -->
+            <img src="images/image_titre.png" class="titre">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" id="accueil">Accueil</a></li>
+                    <li class="contient-sous-menu">
+                        <a href="#" id="rubriques">Rubriques</a>
+                        <ul class="sous-menu">
+                            <li><a href="astres.html">Les astres</a></li>
+                            <li><a href="missions_apollo.html">Les missions Apollo</a></li>
+                            <li><a href="futur_de_l_univers.html">Le futur de L'Univers</a></li>
+                            <li><a href="quiz.html">Quiz-bilan</a></li>
+                        </ul>
+                    </li>
+                    <li><a onClick="aPropos()">À propos</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <h1>L'histoire de l'univers</h1>
+        <img src="images/fond_diffus.jpeg" id="img_evolution">
+        <h2>1) Le Big-Bang</h2>
+            <p>Les scientifiques ont formulé plusieurs hypothèses concernant la formation de notre univers. La 
+                plus connue reste sans doute celle du Big-Bang. En effet, on admet communément que l'Univers 
+                provient d'une explosion ("Bang"), bien que le son ne se propage pas dans l'espace ! (eh oui, 
+                je viens sans doute de détruire les illusions de tous les fans d'une saga mythique : 
+                <a href="https://www.youtube.com/watch?v=3yWrXPck6SI">voir extrait</a>).Pourtant, c'est faux ! 
+                Avant la formation de notre Univers, il n'existait aucun autre monde où l'explosion aurait pu 
+                survenir.En fait, l'Univers grandit en créant son propre espace.
+            </p>
+            <h3>Mais, à ton avis, à quand remonte environ la formation de notre Univers ?</h3> <!-- Petit quiz -->
+            <div>
+                <button class="reponse" id="faux" onClick="afficherFaux('faux');">13,8 millions d'années</button>
+                <button class="reponse" id="faux2" onClick="afficherFaux('faux2')">138 millions d'années</button>
+                <button class="reponse" id="faux3" onClick="afficherFaux('faux3')">1,38 milliard d'années</button>
+                <button class="reponse" id="vrai" onClick="afficherVrai('vrai')">13,8 milliards d'années</button>
+                <button class="reponse" id="faux4" onClick="afficherFaux('faux4')">138 milliards d'années</button>
+            </div>
+            <strong id="cache">Faux ! Essaye encore.</strong>
+            <strong id="cache2">Bravo ! L'univers s'est créé il y a environ 13,8 milliards d'années !!</strong>
+            <p>A sa formation, notre Univers est microscopique mais aussi dans un état dense et très chaud : 
+                environ 142 000 000 000 000 000 000 000 000 000 000 degrés celsius 🥵!
+            </p>
+            <p>Heureusement, cette période durant laquelle l'Univers avait ces caractéristiques, que l'on appelle 
+            <a href="https://fr.wikipedia.org/wiki/%C3%88re_de_Planck">ère de Planck</a>
+            n'a subsisté que 10 <sup>-43</sup> secondes après l'instant 0 (formation de l'Univers).
+            </p>
+            <a href="https://fr.wikipedia.org/wiki/Big_Bang" id="lien_fin">Pour plus d'informations, cliquez !</a>
+        <h2>2) Une matière en désordre</h2>
+            <p>Ensuite, l'Univers a commencé une longue et rapide expansion dans toutes les directions de 
+                l'espace (qui continue toujours aujourd'hui) au cours de laquelle les particules qui constituent 
+                ce bébé Univers vont s'assembler.
+            </p>
+            <table> <!-- CTableau explicatif -->
+                <caption>Tableau (incomplet) des différents types de particules présentes dans l'Univers</caption>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Particularité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Photons</td>
+                        <td>Particules élémentaires qui composent la lumière</td>
+                    </tr>
+                    <tr>
+                        <td>Electrons</td>
+                        <td>Particules élémentaires chargées négativement</td>
+                    </tr>
+                    <tr>
+                        <td>Gluons</td>
+                        <td>Particules élémentaires qui agissent comme une sorte de colle (leur nom vient du mot 
+                            "glue","colle" en anglais)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Quarks</td>
+                        <td>Particules élémentaires qui constituent les protons et les neutrons (qu'on retrouve 
+                            dans le noyau des atomes)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Les particules sont excitées. En effet, à cause de la chaleur, leur énergie est importante : elles 
+                s'entrechoquent. Grâce aux gluons, les quarks se regroupent pour former des particules plus grosses : 
+                les protons et les neutrons. Les protons et les neutrons sont constitués de trois quarks (voir 
+                images ci-dessous). Un proton est chargé positivement tandis qu'un neutron est neutre.
+            </p>
+            <div class="container_images">
+                <figure>
+                    <img src="images/proton.png" id=proton_neutron onMouseOver="changeImage('images/neutron.png');
+                    changeTexte1()" onMouseOut="changeImage('images/proton.png'); changeTexte2()">
+                    <figcaption id="legende">Proton</figcaption> <!-- Change l'image au survol (voir js) -->
+                </figure>
+            </div>    
+            <p>Ces particules se regroupent à leur tour pour former des noyaux solides. Autour de ceux-ci, les 
+                électrons et les photons continuent de s'agiter. Le monde continue de s'étendre, même si son 
+                extension ralentit et sa température baisse. Les protons attirent les électrons, mais les photons
+                éjectent les électrons, qui ne peuvent pas se rapprocher des protons. Ce désordre va durer 
+                plusieurs milliers d'années dans ce monde rempli de photons aussi brillant que la surface du 
+                Soleil.
+            </p>
+        <h2>3) Les atomes</h2>
+            <p>380000 ans après le Big Bang, les photons sont plus calmes et les électrons peuvent enfin se 
+                raprocher des protons. Ils se mettent alors à touner autour des noyaux, formant un nuage 
+                électronique autour de ceux-ci. On appelle ces associations de particules des atomes !
+                Il s'en créé des milliards de milliards de milliards. Ce sont les bases de notre matière, les
+                briques de notre Univers. Les deux premiers atomes sont les premiers du tableau périodique des 
+                éléments (voir ci-dessous) : l'hydrogène et l'hélium. Enfin, les électrons, en s'associant aux
+                noyaux, laissent de la place aux photons qui peuvent enfin suivre une trajectoire rectiligne sans
+                heurter de particule.
+            </p>
+            <img src="images/tableau_periodique.png" alt="tableau_periodique" id="tableau_periodique">
+        <h2>4) Les premières étoiles</h2>
+            <p>Au fur et à mesure que l'Univers s'étend, la lumière s'affaiblit dans tout l'Univers et l'Univers
+                se retrouve dans une obscurité totale. Cette période s'appelle les Ages sombres et dure environ
+                400 millions d'années. Dans l'Univers flottent des nuages de gaz (hydrogène et hélium) qui 
+                attirent les autres noyaux qui circulent autour. Ces nuages se mettent alros à tourner sur 
+                eux-mêmes. C'est la naissance des galaxies. Dans ces galaxie, les atomes se serrent de plus en plus 
+                et forment des boules de matière très chaudes (15 millions de degrés). Ces boules sont les 
+                premières étoiles ! A l'intérieur, les atomes d'hydrogène fusionnent entre eux pour former des 
+                atomes d'hélium. Ceux-ci illuminent les galaxies. Quand ces étoiles meurent, certaines d'entre 
+                elles explosent en <em>supernovae</em> (voir image ci-dessous). Ce phénomène permet de former les 
+                atomes plus lourds jusqu'au fer, dont le noyau contient 26 protons et 30 neutrons, autour duquel 
+                gravitent 26 électrons.
+            </p>
+            <img src="images/supernova.jpg" alt="supernova" id="supernova">
+        <h2>5) Notre système</h2>
+            <p>Notre galaxie s'est formée de la même manière que les autres. Elle s'appelle la Voie Lactée (en 
+                référence à la mythologie). Elle contient entre 200 et 400 milliard d'étoiles. Dans notre galaxie, 
+                il y a 4,6 milliards d'années, un nuage de gaz et de poussière se forme. Puis, peu après, une 
+                grosse étoile explose près de ce nuage, ce qui entraîne la formation de notre étoile : le Soleil. 
+                Le vent solaire chasse les gaz légers plus loin que les poussières plus lourdes, qui restent à 
+                proximité de notre étoile. Les gaz participeront à la formation des quatre planètes gazeuses : 
+                Jupiter, Saturne, Uranus et Neptune (dans l'ordre). Peu après (relativement parlant), les 
+                poussières plus lourdes participeront à la formation des quatre planètes telluriques solides plus 
+                proches du Soleil : Mercure, Vénus, La Terre et Mars (dans l'ordre). On appelle cet ensemble le 
+                système solaire !
+            </p>
+            <img src="images/systeme_solaire.png" alt="systeme_solaire" id="systeme_solaire">
+        <script src="script/histoire_univers.js"></script>
+    </body>
+</html

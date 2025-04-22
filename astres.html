@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/astres.css">
+        <title>Les astres</title>
+        </head>
+        <link rel="shortcut icon" href="images/favicon.png">
+    <body>
+        <header>
+        <nav id="barre-navigation"> <!-- Création d'un menu -->
+            <img src="images/image_titre.png" class="titre">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" id="accueil">Accueil</a></li>
+                    <li class="contient-sous-menu">
+                        <a href="#" id="rubriques">Rubriques</a>
+                        <ul class="sous-menu">
+                            <li><a href="histoire_de_l_univers.html">L'histoire de l'univers</a></li>
+                            <li><a href="missions_apollo.html">Les missions Apollo</a></li>
+                            <li><a href="futur_de_l_univers.html">Le futur de L'Univers</a></li>
+                            <li><a href="quiz.html">Quiz-bilan</a></li>
+                        </ul>
+                    </li>
+                    <li><a onClick="aPropos()">À propos</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <h1>Les astres</h1>
+        <img src="images/trou_noir.jpg" alt="trou_noir" id="trou_noir">
+        <h2>1) Définition</h2>
+            <p>Selon le dictionnaire CNRTL, un astre est un <strong>corps céleste, lumineux par lui-même (soleil,
+                étoiles) ou réfléchissant la lumière solaire (lune, planètes).</strong>
+            </p>
+        <h2>2) Les étoiles</h2>
+        <h3>- Les étoiles :</h3>
+            <p>Une étoile est un astre qui produit sa propre lumière, due aux réactions de fusions nucléaires
+                qui s'y déroulent. Les étoiles sont classées en fonction de leur température de surface (voir
+                image ci-dessous):
+            </p>
+            <img src="images/classification_etoiles.jpg" alt="classification_etoiles" id=classification_etoiles>
+            <p>Notre étoile, le Soleil est une étoile de type G car sa température de surface vaut 6000 Kelvins
+                <a href="https://fr.wikipedia.org/wiki/Kelvin">(voir lien)</a>, soit 5726, 85 degrés celsius.
+                Les étoiles sont soumises à deux forces qui s'opposent et qui leur permettent de ne pas
+                s'effondrer sur elles-mêmes : la gravitation et la pression cinétique. Ce sont les réactions
+                de fusion nucléaire qui se produisent dans leur coeur qui les maintiennent sur elles-mêmes.
+            </p>
+            <h4>A ton avis, quelle est l'étoile la plus proche de nous après le Soleil ?</h4> <!-- Petit quiz -->
+            <div class="quiz_image">
+                <div>
+                    <button class="reponse" id="faux1" onClick="afficherFaux1()">Véga</button>
+                    <button class="reponse" id="faux2" onClick="afficherFaux2()">Bételgeuse</button>
+                    <button class="reponse" id="vrai" onClick="afficherVrai()">Proxima du Centaure</button>
+                    <button class="reponse" id="faux3" onClick="afficherFaux3()">Sirius</button>
+                    <button class="reponse" id="faux4" onClick="afficherFaux4()">Rigel</button>
+                </div>
+            </div>
+        <h3>- Les naines blanches :</h3> <!-- Préentation des astres -->
+            <p>
+                Une naine blanche se forme à la fin de vie d'une étoile  de masse moyenne, comme notre 
+                Soleil. L'étoile fusionne son hydrogène en hélium jusqu'à ce que les ressources 
+                d'hydrogène s'épuisent. L'étoile gonfle alors et se transforme en géante rouge.
+                L'étoile expulse ensuite ses couches externes et forme une nébuleuse
+                planétaire (un amas de gaz). Ce qui reste alors s'appelle une <b>naine blanche</b>.
+                C'est le futur de notre Soleil. Cet objet de forte densité et de gravité intense
+                brille encore (grâce à la chaleur accumulée) mais reforidit lentement et devient une 
+                naine noire (il n'en existe aucune dans l'Univers, car celui-ci est "trop jeune").
+            </p>
+            <img src="images/naine_blanche.jpg" alt="naine_blanche" class="images">
+        <h3>- Les trous noirs :</h3>
+            <p> 
+                Un trou noir est un astre invisible, où la gravité est si forte, que rien ne peut s'en échapper,
+                pas même la lumière. Il se forme lorsqu'une étoile massive s'effondre sur elle-même. On appelle
+                horizon des évènements la limite au-delà de laquelle plus rien ne revient et singularité le
+                centre du trou noir, où la densité et la gravité sont infinies ! Comme aucune lumière ne peut
+                s'échapper d'un trou noir, celui-ci est invisible mais la courbure de l'espace-temps qu'il créé
+                permet aux scientifiques de le détecter. Au centre des galaxies se trouve un trou noir gigantesque
+                (Saggitarius A est celui situé au centre de la Voie Lactée).
+            </p>
+            <div>
+                <img src="images/saggitarius_A.jpeg" alt="saggitarius" class="exemples_trous_noirs">
+                <img src="images/exemple_2_trou_noir.jpg" alt="exemple_2" class="exemples_trous_noirs">
+            </div>
+        <h2>3) Les corps réfléchissants</h2>
+        <h3>- Les planètes :</h3>
+            <p>Les planètes sont des astres qui orbitent autour d'une étoile (comme toutes les planètes du
+                système solaire) ou qui ne dépendent d'aucune étoile, mais ne sont pas les vestiges d'une 
+                étoile ou de n'importe quel autre corps céleste. Les planètes qui orbitent autour d'une étoile
+                réfléchissent sa lumière. Les planètes qui se situent en dehors de notre système solaire 
+                sont appelées exoplanètes.
+            </p>
+            <div class="container">
+                <figure>
+                    <img src="images/jupiter.jpg" alt="planete" id="planete" 
+                    onMouseOver="changeImage('images/exoplanete.jpg'); changeTexte()" 
+                    onMouseOut="changeImage('images/jupiter.jpg'); changeTexte2()">
+                    <figcaption id="legende">Une planète (Jupiter)</figcaption>
+                </figure>
+                <div>
+                    <button id="agrandir_image" onClick="agrandirImage()">Agrandir l'image</button>
+                    <button id="retrecir_image" onClick="retrecirImage()">Rétrécir l'image</button>
+                </div>
+            </div>
+            <p>Il faut distinguer les planètes <strong>telluriques</strong> (comme Mercure, Vénus, La Terre ou
+                Mars) des planètes <strong>gazeuses</strong> (comme Jupiter, Saturne, Uranus et Neptune). Il existe
+                des planètes naines (planète de petit diamètre) comme Pluton ou Cérès par exemple.
+            </p>
+            <a href="https://www.youtube.com/watch?v=qcgCTynx20M">Une petite vidéo sur les planètes naines</a> <!-- Lien vidéo -->
+        <h3>- Les lunes :</h3>
+            <p>Une lune est un satellite naturel qui orbite autour d'une planète. Par exemple, dans le système
+                solaire, on a :
+            </p>
+            <ul class="liste_lunes"> <!-- Liste des lunes -->
+                <li>Mercure : 0 lunes</li>
+                <li>Vénus : 0 lunes</li>
+                <li>La Terre : 1 lune (La Lune)</li>
+                <li>Mars : 2 lunes (Phobos et Déimos) Elles portent les noms des fils d'Arès (ou Mars). Elles sont
+                    les personnifications de la Peur (<em>Phobos</em>) et de la Terreur(<em>Déimos</em>).
+                </li>
+                <li>Jupiter : 95 lunes ! dont notamment :
+                    <ul>
+                        <li>Io</li>
+                        <li>Europe</li>
+                        <li>Ganymède (la plus grande lune du système solaire)</li>
+                        <li>Callisto</li>
+                    </ul>
+                </li>
+                <p>Les lunes de Jupiter portent les noms des conquêtes de Zeus.</p>
+                <li>Saturne : 146 lunes ! dont notamment :
+                    <ul>
+                        <li>Titan (la seule lune du système solaire avec une atmosphère dense)</li>
+                        <li>Encelade</li>
+                        <li>Mimas</li>
+                        <li>Rhéa</li>
+                        <li>Dioné</li>
+                        <li>Thétys</li>
+                    </ul>
+                </li>
+                <p>Les lunes de Saturne portent les noms de titans, géants et divinité de la mythologie
+                    greque.
+                </p>
+                <li>Uranus : 27 ou 28 lunes dont notamment :
+                    <ul>
+                        <li>Titania</li>
+                        <li>Obéron</li>
+                        <li>Umbriel</li>
+                        <li>Ariel</li>
+                        <li>Miranda</li>
+                    </ul>
+                </li>
+                <p>Les lunes d'Uranus portent les noms des personnages présents dans les romans
+                    de William Shakespeare et d'Alexandre Pope.
+                </p>
+                <li>Neptune : 16 lunes dont notamment :
+                    <ul>
+                        <li>Triton</li>
+                        <li>Proteus</li>
+                        <li>Nereid</li>
+                        <li>Thalassa</li>
+                    </ul>
+                </li>
+                <p>Les lunes de Neptune portent les noms de divinités marines de la mythologie grecque </p>
+            </ul>
+        <h3>- Les astéroïdes :</h3>
+            <p>Les astéroïdes sont des astres gravitant autour d'une étoile (comme ceux de la ceinture de kuiper)
+                ou autour d'une planète, ou cirulant librement dans l'Univers. Ils sont rocheux ou métalliques.
+            </p>
+            <img src="images/asteroide.jpg" alt="asteroide" class="images">
+        <h3>- Les comètes</h3>
+            <p>Les comètes sont des astres orbitant autour d'une étoile ou d'une planète mais ont une orbite
+                très elliptique et leur composition est rocheuse. Nénamoins, les comètes sont recouvertes de 
+                glace, ce qui leur permet d'avoir une queue lumineuse (étoile filante) en s'approchant du 
+                Soleil (contrairement aux astéroïdes).
+            </p>
+            <img src="images/comete.jpeg" alt="comete" class="images">
+        <h3>- Les météroïdes, météores et météorites :</h3>
+            <table> <!-- Tableau explicatif -->
+                <caption>Tableau des différences</caption>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Météroïde</td>
+                        <td>Astre voyageant dans l'espace (de petite taille).</td>
+                    </tr>
+                    <tr>
+                        <td>Météore</td>
+                        <td>Phénomène lumineux (étoile filante) créé lorsqu'un météroïde rentre dans l'atmosphère terrestre.</td>
+                    </tr>
+                    <tr>
+                        <td>Météorite</td>
+                        <td>Partie d'un météroïde qui tombe sur Terre après avoir traversé l'atmosphère terrestre.</td>
+                    </tr>
+                </tbody>
+            </table>
+        <script src="script/astres.js"></script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+} /*initialise les valeurs*/
+body{
+    font-family: 'Exo', sans-serif;
+    height: 500vh;
+} /*détermine la police*/
+a{
+    cursor: pointer;
+}
+h1,h2,h3{
+    font-family: 'Orbitron', sans-serif;
+}
+#background-video{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+#barre-navigation{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background: #fafafa;
+    box-shadow: inset 0px -1px 0px #d3d3d3;
+}
+.titre{
+    width: 200px;
+    height: 170px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    top: 0;
+    left:0;
+}
+.menu > ul{
+    display: flex;
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: #111;
+    display: block;
+    padding: 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+.contient-sous-menu{
+    position: relative;
+}
+.sous-menu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #FFF;
+    width: max-content;
+}
+.sous-menu li a:hover{
+    background: #f2f2f2;
+}
+.contient-sous-menu:hover .sous-menu{
+    display: block;
+}
+#recherche{
+    border: 0.5px solid black;
+}
+#bienvenue{
+    margin-top: 175px;
+    text-align: center;
+}
+.paragraphe_presentation{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: large;
+}
+#container{
+    display: flex;
+    margin-top: 20px;
+}
+#container2{
+    display: flex;
+    margin-top: 30px;
+}
+#titre_rubriques {
+    margin-top: 20px;
+}
+.selection {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    display: block;
+    background-color: #031d4e;
+    color: #d3d3d3;
+    width: 442px;
+    height: 90px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out, transform 0.15s ease-in-out; /*ajout d'une transition*/
+}
+.selection:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+.presentation {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    width: 420px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out; /*ajout d'une animation*/
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} /*animation complexe qui joue sur l'opacité des éléments*/

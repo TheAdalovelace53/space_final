@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/quiz.css">
+        <title>L'espace</title>
+    </head>
+        <link rel="shortcut icon" href="images/favicon.png">
+    <body>
+        <header>
+        <nav id="barre-navigation"> <!-- Création du menu -->
+            <img src="images/image_titre.png" class="titre">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" id="accueil">Accueil</a></li>
+                    <li class="contient-sous-menu">
+                        <a href="#" id="rubriques">Rubriques</a>
+                        <ul class="sous-menu">
+                            <li><a href="histoire_de_l_univers.html">L'histoire de l'univers</a></li>
+                            <li><a href="astres.html">Les astres</a></li>
+                            <li><a href="missions_apollo.html">Les missions Apollo</a></li>
+                            <li><a href="futur_de_l_univers.html">Le futur de L'Univers</a></li>
+                        </ul>
+                    </li>
+                    <li><a onClick="aPropos()">À propos</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <h1>Le quiz-bilan !</h1>
+        <div class="score">Score : <span id="score">0/20</span></div>
+        <p>Après avoir parcouru toutes les rubriques, il est temps de vous tester. Merci de vous référer aux règles ci-dessous :
+        </p>
+        <ul> <!-- Liste des règles -->
+            <li><p>- Il n'y a qu'un seule réponse possible (à part pour la dernière question).</p></li>
+            <li><p>- Le score est placé à droite.</p></li>
+            <li><p>- Celui-ci augmente de 1 point si vous donnez la bonne réponse du premier coup.</p></li>
+            <li><p>- Sinon, il ne change pas.</p></li>
+            <li><p>- Vous ne pouvez pas vous référer aux rubriques en faisant le quiz.</p></li>
+            <li><p>- Bonne chance !</p></li>
+        </ul>
+        <div class="question" data-id="q1"> <!-- Création d'un conteneur pour les questions-->
+            <h3>Comment pourrait-on qualifier la taille de l'Univers dans les secondes qui précédèrent sa formation ?</h3>
+            <button class="reponse vraie">De microscopique</button>
+            <button class="reponse">De gigantesque</button>
+            <button class="reponse">De la même taille qu'aujourd'hui</button>
+        </div>
+        <div class="question" data-id="q2">
+            <h3>Comment s'appellent les particules qui composent le noyau d'un atome ?</h3>
+            <button class="reponse">Les électrons et les neutrons</button>
+            <button class="reponse">Les électrons et les photons</button>
+            <button class="reponse vraie">Les protons et les neutrons</button>
+        </div>
+        <div class="question" data-id="q3">
+            <h3>Quel est l'ordre correct des 4 premières planètes du système solaire ?</h3>
+            <button class="reponse">Vénus, Mars, La Terre, Mercure</button>
+            <button class="reponse vraie">Mercure, Vénus, La Terre, Mars</button>
+            <button class="reponse">Mars, Vénus, La Terre, Mercure</button>
+        </div>
+        <div class="question" data-id="q4">
+            <h3>Quel est l'ordre correct des 4 dernières planètes du système solaire ?</h3>
+            <button class="reponse vraie">Jupiter, Saturne, Uranus, Neptune</button>
+            <button class="reponse">Pluton, Saturne, Jupiter, </button>
+            <button class="reponse">Jupiter, Uranus, Saturne, Neptune</button>
+        </div>
+        <div class="question" data-id="q5">
+            <h3>L'Univers est en...</h3>
+            <button class="reponse">contraction</button>
+            <button class="reponse vraie">expansion</button>
+        </div>
+        <div class="question" data-id="q6">
+            <h3>Qu'est-ce qu'une naine blanche ?</h3>
+            <button class="reponse">Une exoplanète de petite taille de couleur blanche</button>
+            <button class="reponse">Un petit trou noir qui réfléchit la lumière</button>
+            <button class="reponse vraie">Le reste d'une étoile en fin de vie</button>
+        </div>
+        <div class="question" data-id="q7">
+            <h3>Combien de lunes possède Jupiter ?</h3>
+            <button class="reponse">Aucune, la Lune est le satellite naturel de la Terre</button>
+            <button class="reponse vraie">95</button>
+            <button class="reponse">75</button>
+        </div>
+        <div class="question" data-id="q8">
+            <h3>Quelle est la différence entre un météore et une météorite ?</h3>
+            <button class="reponse">Il n'y en a pas</button>
+            <button class="reponse">Le premier est une partie d'un météroïde qui tombe sur Terre après avoir traversé l'atmosphère terrestre, le deuxième est 	Phénomène lumineux (étoile filante) créé lorsqu'un météroïde rentre dans l'atmosphère terrestre.</button>
+            <button class="reponse vraie">L'inverse de la réponse précédente</button>
+        </div>
+        <div class="question" data-id="q9">
+            <h3>Les naines noires...</h3>
+            <button class="reponse vraie">ne sont pas encore présentes dans notre Univers car celui-ci est "trop jeune"</button>
+            <button class="reponse">sont des trous noirs supermassifs</button>
+        </div>
+        <div class="question" data-id="q10">
+            <h3>Quels sont les planètes gazeuses ?</h3>
+            <button class="reponse">Mercure, Vénus, La Terre et Mars</button>
+            <button class="reponse vraie">Jupiter, Saturne, Uranus et Neptune</button>
+        </div>
+        <div class="question" data-id="q11">
+            <h3>Comment s'appellent les astronautes de la mission Apollo 11 ?</h3>
+            <button class="reponse">Buzz Amstrong, Michael Amstrong et Neil Collins</button>
+            <button class="reponse vraie">Buzz Aldrin, Michael Collins et Neil Amstrong</button>
+            <button class="reponse">Buzz Collins, Michael Aldrin et Neil Aldrin</button>
+        </div>
+        <div class="question" data-id="q12">
+            <h3>Quel est le nom de la fusée qui les a lancés ?</h3>
+            <button class="reponse">Neptun 5</button>
+            <button class="reponse">Jupiter 5</button>
+            <button class="reponse vraie">Saturn 5</button>
+        </div>
+        <div class="question" data-id="q13">
+            <h3>Quelle est la mission Apollo pendant laquelle un des astronautes prononce cette phrase : "Houston, we've had a problem."</h3>
+            <button class="reponse vraie">Apollo 13</button>
+            <button class="reponse">Apollo 12</button>
+            <button class="reponse">Apollo 11</button>
+        </div>
+        <div class="question" data-id="q14">
+            <h3>Quel est l'organisme spatial dont l'acronyme est NASA ?</h3>
+            <button class="reponse vraie">National Aeronautics and Space Administration</button>
+            <button class="reponse">National Aeronautics and Science Administration</button>
+            <button class="reponse">National Aerospace and Satellite Agency</button>
+        </div>
+        <div class="question" data-id="q15">
+            <h3>Quelle est la mission dont l'aboutissement a été tragique ?</h3>
+            <button class="reponse">Apollo 12</button>
+            <button class="reponse vraie">Apollo 1</button>
+            <button class="reponse">Apollo 17</button>
+        </div>
+        <div class="question" data-id="q16">
+            <h3>Dans combien de temps le Soleil entrera-t'il dans la phase de la fin de sa vie ?</h3>
+            <button class="reponse vraie">Dans 5 milliards d'années</button>
+            <button class="reponse">Dans 500 millions d'années</button>
+            <button class="reponse">Dans 50 millions d'années</button>
+        </div>
+        <div class="question" data-id="q17">
+            <h3>Qu'est-ce que le <em>Big Freeze</em> ?</h3>
+            <button class="reponse">La température la plus froide dans l'Univers</button>
+            <button class="reponse">Un grand congélateur</button>
+            <button class="reponse vraie">La mort thermique de l'Univers théorique</button>
+        </div>
+        <div class="question" data-id="q18">
+            <h3>Quel est le pourcentage d'énergie sombre dans l'Univers ?</h3>
+            <button class="reponse vraie">environ 68%</button>
+            <button class="reponse">environ 18%</button>
+            <button class="reponse">environ 98%</button>
+        </div>
+        <div class="question" data-id="q19">
+            <h3>Comment appelle-t'on la théorie selon laquelle l'Univers se contracte et s'effondre à sa mort ?</h3>
+            <button class="reponse vraie">Le <em>Big Crunch</em></button>
+            <button class="reponse">Le <em>Big Bang</em></button>
+            <button class="reponse">Le <em>Big Rip</em></button>
+        </div>
+        <div class="question" data-id="q20">
+            <h3>Avez-vous aimé mon site ?</h3>
+            <button class="reponse vraie">Oui</button>
+            <button class="reponse vraie">Non</button>
+            <button class="reponse vraie">Sans avis</button>
+        </div>
+        <script src="script/quiz.js"></script>
+    </body>
+</html>

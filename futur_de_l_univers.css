@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+} /*initialise les valeurs*/
+p,q{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 5px;
+}
+a{
+    margin-left: 15px;
+    cursor: pointer;
+}
+body{
+    font-family: 'Exo', sans-serif; /*initialise la police*/
+    height: 500vh;
+}
+#background-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#barre-navigation{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background: #fafafa;
+    box-shadow: inset 0px -1px 0px #d3d3d3;
+}
+.titre{
+    width: 200px;
+    height: 170px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    top: 0;
+    left:0;
+}
+.menu > ul{
+    display: flex;
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: #111;
+    display: block;
+    padding: 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+} 
+.contient-sous-menu{
+    position: relative;
+}
+.sous-menu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #FFF;
+    width: max-content;
+    transition: all 0.3s ease;
+}
+.sous-menu li a:hover{
+    background: #f2f2f2;
+}
+.contient-sous-menu:hover .sous-menu{
+    display: block;
+    transition: 3s;
+}
+#recherche{
+    border: 0.5px solid black;
+}
+h1,h2{
+    font-family: 'Orbitron', sans-serif;
+}
+h1{
+    margin-top: 130px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h2,h3, h4{
+    margin-left: 15px;
+}
+.images{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: auto;
+}
+.legende{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.animation{
+    display: block; 
+    margin: auto;/*met au centre*/
+    width: 200px;
+    height: auto;
+}
+#energie_noire{
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 275px;
+}

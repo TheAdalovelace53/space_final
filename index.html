@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>L'espace</title>
+</head>
+    <link rel="shortcut icon" href="images/favicon.png">
+<body>
+    <header>
+    <nav id="barre-navigation"> <!-- Création d'un menu -->
+        <img src="images/image_titre.png" class="titre">
+        <div class="menu">
+            <ul>
+                <li class="contient-sous-menu">
+                    <a href="#" id="rubriques">Rubriques</a>
+                    <ul class="sous-menu">
+                        <li><a href="histoire_de_l_univers.html">L'histoire de l'Univers</a></li>
+                        <li><a href="astres.html">Les astres</a></li>
+                        <li><a href="missions_apollo.html">Les missions Apollo</a></li>
+                        <li><a href="futur_de_l_univers.html">Le futur de L'Univers</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a onClick="aPropos()">À propos</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <h1 id="bienvenue">Bienvenue sur mon site à propos de l'espace !</h1> <!-- Présentation -->
+    <p class="paragraphe_presentation">Vous souhaitez découvrir les mystères de l'univers ?</p>
+    <p class="paragraphe_presentation">S'intéresser à ses curiosités ?</p>
+    <p class="paragraphe_presentation">Alors ce site est fait pour vous ! Fouinez, cherchez, et je suis certain que vous trouverez ce qui vous plaira !</p>
+    <h2 id="titre_rubriques">Présentation des rubriques</h2>
+    <div id="container">
+        <button class="selection" onClick="ouvrirDescription('description1')">L'histoire de l'univers</button>
+        <p id="description1" class="presentation">
+            Cette rubrique vous présentera l'univers du Big Bang à aujourd'hui ! <!-- Présentation des rubriques -->
+        </p>
+        <button class="selection" onClick="ouvrirDescription('description2')">Les astres</button>
+        <p id="description2" class="presentation">
+            Cette rubrique vous présentera les différents types d'astres et leurs particularités !
+        </p>
+        <button class="selection" onClick="ouvrirDescription('description3')">Les missions Apollo</button>
+        <p id="description3" class="presentation">
+            Cette rubrique vous présentera les différentes missions menées par la NASA !
+        </p>
+    </div>
+    <div id="container2">
+        <button class="selection" onClick="ouvrirDescription('description4')">Les fusées</button>
+        <p id="description4" class="presentation">
+            Cette rubrique vous présentera les différentes modèles de fusées qui existent !
+        </p>
+        <button class="selection" onClick="ouvrirDescription('description5')">Les découvertes humaines</button>
+        <p id="description5" class="presentation">
+            Cette rubrique vous présentera les découvertes scientifiques majeures !
+        </p>
+        <button class="selection" onClick="ouvrirDescription('description6')">Le futur de l'univers</button>
+        <p id="description6" class="presentation">
+            Cette rubrique vous présentera les différentes hypothèses concernant l'avenir de notre univers !
+        </p>
+    </div>
+    <video autoplay muted loop id="background-video"> <!-- Vidéo lue en boucle -->
+        <source src="images/0323.mp4" type="video/mp4">
+    </video>
+    <script src="script/script.js"></script>
+</body>
+</html>
