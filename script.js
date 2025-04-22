@@ -1,5 +1,5 @@
 function aPropos(){
-    alert("Site entièrement créé par Arno SOULARD BARENTON 1G2. J'espère qu'il vous plaira")
+    alert("Site entièrement créé par TheAdaLovelace53. J'espère qu'il vous plaira")
 }
 
 function ouvrirDescription(id){
